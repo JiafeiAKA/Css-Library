@@ -1,11 +1,3 @@
-export interface MessageState{
-    message: string
-}
-
-export interface EventState {
-    event: Event | null
-}
-
 export interface Event {
     id: number
     category: string
@@ -14,19 +6,21 @@ export interface Event {
     location: string
     date: string
     time: string
-    petsAllowed: boolean
+    petAllowed: boolean
     organizer: string
 }
 
 export interface Student {
-    id: number
-    studentId: string
-    name: string
-    surname: string
-    gpa: number
-    image: string
-    penAmount: number
-    description: string
-  }
+    id: number;
+    name: string;
+    surname: string;
+    gpa: number;
+}
 
-  
+export interface MessageState {
+    message: String
+}
+
+export interface EventState {
+    event: Event | null
+}
